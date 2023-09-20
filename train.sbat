@@ -1,0 +1,33 @@
+#!/bin/bash
+#“#SBATCH” directives that convey submission options:
+##### The name of the job
+#SBATCH --job-name=META_TABE_Marker_4epochs_042022_06
+##### When to send e-mail: pick from NONE, BEGIN, END, FAIL, REQUEUE, ALL
+#SBATCH --mail-type=BEGIN,END,FAIL
+##### Resources for your job
+# number of physical nodes
+#SBATCH --nodes=1
+# number of task per a node (number of CPU-cores per a node)
+#SBATCH --partition=gpu
+#SBATCH --gpus=1
+#SBATCH --mem-per-gpu=16000m
+#SBATCH --cpus-per-gpu=4
+# memory per a CPU-core
+##### Maximum amount of time the job will be allowed to run
+##### Recommended formats: MM:SS, HH:MM:SS, DD-HH:MM
+#SBATCH --time=24:00:00
+##### The resource account; who pays
+#SBATCH --account=eecs545s001w22_class
+########## End of preamble! #########################################
+# No need to “cd”. Slurm starts the job in the submission directory.
+#####################################################################
+# The application(s) to execute along with its input arguments and options:
+my_job_header
+
+/bin/hostname
+module purge
+module load python/3.8.7
+#python3 main.py --test-no 04202202 --META --n-epochs 15 --CUDA_VISIBLE_DEVICES 0  
+#python3 main.py --test-no 04192304 --n-epochs 15 --CUDA_VISIBLE_DEVICES 0 
+python3 main.py --META --debias-config TABE --marked --skew --test-no 04202206 --n-epochs 4 --CUDA_VISIBLE_DEVICES 0 
+
