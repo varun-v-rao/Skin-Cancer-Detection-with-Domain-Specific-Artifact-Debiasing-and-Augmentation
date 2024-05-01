@@ -31,7 +31,12 @@ Incorporating features based on the 'Asymmetry, Border, Color, and Diameter' (AB
 ## Experimental Results
 We evaluate model performance using AUC and F1 scores, demonstrating significant improvements with our proposed methods compared to baseline models.
 
+
+
+
+
 ![Results1](images/results_1.png)
+**Table 1:** *AUC scores for the Model with different configurations.* The best performance for between the two debiasing techniques are highlighted in blue. Additionally, the best performance for the model configurations with handcrafted features is highlighted in red. All configurations were trained to converge to a minimum loss of 0.05
 
 ![Results2](images/results_2.png)
 
