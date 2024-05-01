@@ -22,8 +22,16 @@ We utilize dermoscopic skin lesion datasets from the ISIC challenge, pre-process
 ### Artifact Debiasing
 We employ a debiasing architecture called 'Turning a Blind Eye' (TABE) to remove bias induced by artifacts. TABE learns a feature representation invariant to secondary tasks, improving classification accuracy.
 
+<p align="center">
+<img src="images/Debiasing_nw.png" alt="Debiasing" width="75%"/>
+</p>
+
 ### Data Augmentation
 We generate synthetic images with custom-designed artifacts to introduce randomness and alleviate dataset imbalance. This method enhances model generalization and prevents overfitting.
+
+<p align="center">
+<img src="images/Augmentation.png" alt="Augmentation" width="50%"/>
+</p>
 
 ### Hand-crafted Features
 Incorporating features based on the 'Asymmetry, Border, Color, and Diameter' (ABCD) metric, we capture lesion characteristics. Features like Hu moments and Local Binary Patterns aid in classification.
