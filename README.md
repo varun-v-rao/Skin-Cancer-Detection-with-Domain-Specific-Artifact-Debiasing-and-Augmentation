@@ -2,9 +2,11 @@
 
 ## Abstract
 Early and accurate detection of melanoma is crucial for effective treatment. Deep learning techniques have shown promise in replicating melanoma diagnosis, but challenges like dataset imbalance and domain-specific artifacts hinder their performance. In this project, we propose augmentation techniques and hand-crafted feature incorporation to address these challenges. Our methods lead to significant improvements in model performance, with up to a 56% increase using unlearning methods and up to 24% increase compared to baseline models.
+![ProposedModel](images/proposed_model.png?)
 
 ## Introduction
 Melanoma, a form of skin cancer, requires early detection for effective treatment. Dermoscopy, a noninvasive imaging procedure, aids in diagnosis but is limited by its accuracy and cost. Deep learning models offer a promising solution, yet challenges like dataset imbalance and domain-specific artifacts affect their performance. This project aims to mitigate these challenges through augmentation techniques and hand-crafted feature incorporation.
+![Intro](images/marker_effects_1_all.PNG)
 
 ## Proposed Method
 
@@ -22,6 +24,10 @@ Incorporating features based on the 'Asymmetry, Border, Color, and Diameter' (AB
 
 ## Experimental Results
 We evaluate model performance using AUC and F1 scores, demonstrating significant improvements with our proposed methods compared to baseline models.
+
+![Results1](images/results_1.png)
+
+![Results2](images/results_2.png)
 
 ## Future Work
 Future work includes extending the debiasing method to handle multiple artifacts simultaneously and improving computational efficiency for mobile deployment.
