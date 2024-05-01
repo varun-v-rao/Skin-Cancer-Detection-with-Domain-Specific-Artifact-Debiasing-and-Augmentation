@@ -35,10 +35,10 @@ We evaluate model performance using AUC and F1 scores, demonstrating significant
 
 
 
-![Results1](images/results_1.png)
+![Results1]()
 **Table 1:** *AUC scores for the Model with different configurations.* The best performance for between the two debiasing techniques are highlighted in blue. Additionally, the best performance for the model configurations with handcrafted features is highlighted in red. All configurations were trained to converge to a minimum loss of 0.05
 
-![Results2](images/results_2.png)
+![Results2]()
 
 ## Future Work
 Future work includes extending the debiasing method to handle multiple artifacts simultaneously and improving computational efficiency for mobile deployment.
